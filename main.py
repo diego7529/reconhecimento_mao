@@ -1,8 +1,10 @@
+#pip install opencv-python mediapipe
+
 import cv2
 import mediapipe as mp
 import numpy as np
 
-video = cv2.VideoCapture(1)
+video = cv2.VideoCapture(0)
 
 hand = mp.solutions.hands
 Hands = hand.Hands(max_num_hands=2, min_detection_confidence=0.5)
